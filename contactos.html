@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contactos.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/perfil.css">
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png">
+  <title>Contactos</title>
+</head>
+
+<body>
+  <header>
+    <!-- NAVBAR -->
+    <a href="index.html" class="Name">
+      <h2 class="logo">Contactos</h2>
+    </a>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar"> &#8801 </label>
+
+    <nav class="menu">
+      <a href="favoritos.html">Favoritos</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="todolist.html">Todo List</a>
+      <a href="index.html">Cerrar Sesion</a>
+      <label for="check" class="ocultar"> &#967</label>
+    </nav>
+  </header>
+  <!-- TABLA DE CONTACTOS -->
+  <div class="tabla-contactos">
+    <br><br>
+    <a type="button" class="btn" id="agregar-contacto" href="nuevocontacto.html">Agregar contacto</a>
+    <br><br><br>
+    <table class="table table-hover" id="table">
+
+      <thead>
+        <tr>
+          <th scope="col">Número</th>
+          <th scope="col">Nombres</th>
+          <th scope="col">Apellidos</th>
+          <th scope="col">Sexo</th>
+          <th scope="col">Número</th>
+          <th scope="col">Correo Electrónico</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-light" onclick="window.location.href='contacto_1.html';">
+          <th scope="row">1</th>
+          <td>Hugo Leonel </td>
+          <td>López Villacorta</td>
+          <td>Masculino</td>
+          <td>2342-6531</td>
+          <td>hlopez@gmail.com</td>
+          <td><a type="button" class="btn" id="agregar-favoritos" href="favoritos.html">Agregar a favoritos</a></td>
+        </tr>
+        <tr class="table-dark" onclick="window.location.href='contacto_2.html';">
+          <th scope="row">2</th>
+          <td>Gabriela Elizabeth</td>
+          <td>Almoguera Fernández</td>
+          <td>Femenino</td>
+          <td>2321-8965</td>
+          <td>galoguera@gmail.com</td>
+          <td><a type="button" class="btn" id="agregar-favoritos" href="favoritos.html">Agregar a favoritos</a></td>
+        </tr>
+        <tr class="table-light" onclick="window.location.href='contacto_3.html';">
+          <th scope="row">3</th>
+          <td>Thiago André</td>
+          <td>Olmeda Andrade</td>
+          <td>Masculino</td>
+          <td>2039-3421</td>
+          <td>tolmeda@gmail.com</td>
+          <td><a type="button" class="btn" id="agregar-favoritos" href="favoritos.html">Agregar a favoritos</a></td>
+        </tr>
+        <tr class="table-dark" onclick="window.location.href='contacto_4.html';">
+          <th scope="row">4</th>
+          <td>Daniela Alessandra</td>
+          <td>Velázquez Payán</td>
+          <td>Femenino</td>
+          <td>3213-3212</td>
+          <td>dvelazquez@gmail.com</td>
+          <td><a type="button" class="btn" id="agregar-favoritos" href="favoritos.html">Agregar a favoritos</a></td>
+        </tr>
+        <tr class="table-light" onclick="window.location.href='contacto_5.html';">
+          <th scope="row">5</th>
+          <td>Joshua Caleb</td>
+          <td>Gómez Hernández</td>
+          <td>Masculino</td>
+          <td>4884-9839</td>
+          <td>jgomez@gmail.com</td>
+          <td><a type="button" class="btn" id="agregar-favoritos" href="favoritos.html">Agregar a favoritos</a></td>
+        </tr>
+
+
+      </tbody>
+    </table><br><br><br>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contactos.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/perfil.css">
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png">
+  <title>Favoritos</title>
+</head>
+
+<body>
+  <header>
+    <!-- NAVBAR -->
+    <a href="index.html" class="Name">
+      <h2 class="logo">Favoritos</h2>
+    </a>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar"> &#8801 </label>
+
+    <nav class="menu">
+
+      <a href="favoritos.html">Favoritos</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="todolist.html">Todo List</a>
+      <a href="index.html">Cerrar Sesion</a>
+      <label for="check" class="ocultar"> &#967</label>
+      <!-- <input type="search" placeholder="Buscar" id="Buscador" /> -->
+    </nav>
+  </header>
+  <!-- TABLA DE CONTACTOS FAVORITOS -->
+  <div class="tabla-contactos">
+    <br><br>
+    <a type="button" class="btn" id="agregar-contacto" href="contactos.html">Agregar un Contacto a favoritos</a>
+    <br><br><br>
+    <table class="table table-hover" id="table">
+      <thead>
+        <tr>
+          <th scope="col">Nombres</th>
+          <th scope="col">Apellidos</th>
+          <th scope="col">Sexo</th>
+          <th scope="col">Número</th>
+          <th scope="col">Correo Electronico</th>
+          <th scope="col">switch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-light" onclick="window.location.href='contacto_1.html';">
+          <th scope="row">Jefrey Eduardo</th>
+          <td>López Ampérez</td>
+          <td>Masculino</td>
+          <td>2342-6531</td>
+          <td>jlopez@gmail.com</td>
+          <td>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Quitar de favoritos</label>
+            </div>
+          </td>
+        </tr>
+        <tr class="table-dark" onclick="window.location.href='contacto_2.html';">
+          <th scope="row">Gabriela Elizabeth</th>
+          <td>Almoguera Fernández</td>
+          <td>Femenino</td>
+          <td>2321-8965</td>
+          <td>galoguera@gmail.com</td>
+          <td>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Quitar de favoritos</label>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

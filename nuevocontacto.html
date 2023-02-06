@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contactos.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/new-contact.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/327/327527.png">
+  <title>Nuevo Contacto</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="Name">
+      <h2 class="logo">Agregar Contactos</h2>
+    </a>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar"> &#8801 </label>
+
+    <nav class="menu">
+      <a href="index.html">Login</a>
+      <a href="favoritos.html">Favoritos</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="todolist.html">Todo List</a>
+      <label for="check" class="ocultar"> &#967</label>
+      <!-- <input type="search" placeholder="Buscar" id="Buscador" /> -->
+    </nav>
+  </header>
+  <br><br><br>
+
+
+  <!-- CONTENERDOR IZQUIERDO, INFORMACIÓN DEL USUARIO -->
+  <div class="contenedor-grande" id="contenedor-grande">
+    <div class="col-xl-8 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">Llenar Formulario</h3>
+            </div>
+            <div class="col-4 text-right">
+              <a href="contactos.html" class="btn btn-sm btn-primary">Guardar</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <form>
+            <h6 class="heading-small text-muted mb-4">Información de Usuario</h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group focused">
+                    <label class="form-control-label" for="input-username">Nombre de usuario</label>
+                    <input type="text" id="input-username" class="form-control form-control-alternative"
+                      placeholder="Nombre de usuario" value="">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-email">Correo Electrónico</label>
+                    <input type="email" id="input-email" class="form-control form-control-alternative"
+                      placeholder="jesse@ejemplo.com">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group focused">
+                    <label class="form-control-label" for="input-first-name">Primer nombre</label>
+                    <input type="text" id="input-first-name" class="form-control form-control-alternative"
+                      placeholder="nombre" value="">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group focused">
+                    <label class="form-control-label" for="input-last-name">Apellido</label>
+                    <input type="text" id="input-last-name" class="form-control form-control-alternative"
+                      placeholder="apellido" value="">
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group focused">
+                    <label class="form-control-label" for="input-username">Sexo</label>
+                    <input type="text" id="input-username" class="form-control form-control-alternative"
+                      placeholder="M/F" value="">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group focused">
+                    <label class="form-control-label" for="input-last-name">Teléfono</label>
+                    <input type="text" id="input-last-name" class="form-control form-control-alternative"
+                      placeholder="1222-4287" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4">
+            <!-- Address -->
+            <h6 class="heading-small text-muted mb-4">Información del contacto</h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group focused">
+                    <label class="form-control-label" for="input-address">Dirección</label>
+                    <input id="input-address" class="form-control form-control-alternative"
+                      placeholder="Dirección de casa" value="" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="form-group focused">
+                    <label class="form-control-label" for="input-city">Ciudad</label>
+                    <input type="text" id="input-city" class="form-control form-control-alternative"
+                      placeholder="Ciudad" value="">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group focused">
+                    <label class="form-control-label" for="input-country">País</label>
+                    <input type="text" id="input-country" class="form-control form-control-alternative"
+                      placeholder="País" value="">
+                  </div>
+                </div>
+                <!-- <div class="col-lg-4">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-country">Postal code</label>
+                  <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code">
+                </div> -->
+              </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <!-- Descripcion -->
+        <h6 class="heading-small text-muted mb-4" style="padding: 0px 20px;">Acerca de ti </h6>
+        <div class="pl-lg-4">
+          <div class="form-group focused" style="padding: 0px 20px;">
+            <label>Acerca de mí</label>
+            <textarea rows="4" style="padding: 0px 20px;" class="form-control form-control-alternative"
+              placeholder="Unas palabras sobre ti..."></textarea>
+          </div>
+        </div>
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+  <br><br>
+</body>
+
+</html>

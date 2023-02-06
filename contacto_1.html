@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3106/3106921.png">
+  <link rel="stylesheet" href="css/perfil.css">
+  <link rel="stylesheet" href="css/contactos.css">
+  <title>Hugo López</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="Name">
+      <h2 class="logo">Contactos</h2>
+    </a>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar"> &#8801 </label>
+
+    <nav class="menu">
+
+      <a href="favoritos.html">Favoritos</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="todolist.html">Todo List</a>
+      <a href="index.html">Cerrar Sesion</a>
+      <label for="check" class="ocultar"> &#967</label>
+      <!-- <input type="search" placeholder="Buscar" id="Buscador" /> -->
+    </nav>
+  </header>
+
+  <div class="main-content">
+
+
+    <!-- Header con foto de fondo-->
+    <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+      style="min-height: 600px; background-image: url(https://i.pinimg.com/originals/17/a2/64/17a264b408408bb91167029ccfda664c.jpg); background-size: cover; background-position: center top;">
+      <!-- Mask -->
+      <span class="mask bg-gradient-default opacity-8" "></span>
+          <!-- Header y contenedor con el texto-->
+          <div class=" container-fluid d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-7 col-md-10">
+            <h1 class="display-2 text-white">Hugo López</h1>
+            <p class="text-white mt-0 mb-5">Esta es página de perfil de Joshua. Puedes ver el progreso que ha hecho con
+              su
+              trabajo.</p>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Contenedor derecho con imagen -->
+  <div class="container-fluid mt--7">
+    <div class="row">
+      <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+        <div class="card card-profile shadow">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 order-lg-2">
+              <div class="card-profile-image">
+                <a href="#">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BMzA3ODg3ODgwOF5BMl5BanBnXkFtZTcwOTA4Nzg0NA@@._V1_.jpg"
+                    class="rounded-square ">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-info mr-4">Conectado</a>
+              <a href="#" class="btn btn-sm btn-default float-right">Enviar Mensaje</a>
+            </div>
+          </div>
+          <div class="card-body pt-0 pt-md-4">
+            <div class="row">
+              <div class="col">
+                <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                  <!-- Cuadro de amigos, fotos, coments -->
+                  <div>
+                    <span class="heading">22</span>
+                    <span class="description">Amigos</span>
+                  </div>
+                  <div>
+                    <span class="heading">2</span>
+                    <span class="description">Fotos</span>
+                  </div>
+                  <div>
+                    <span class="heading">50</span>
+                    <span class="description">Comentarios</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <!-- Información del perfil -->
+              <h3>
+                Jefrey López<span class="font-weight-light">, 17</span>
+              </h3>
+              <div class="h5 font-weight-300">
+                <i class="ni location_pin mr-2"></i>Guatemala, Ciudad de Guatemala
+              </div>
+              <div class="h5 mt-4">
+                <i class="ni business_briefcase-24 mr-2"></i>Creador de codigo - Trabajador de Microsoft
+              </div>
+              <div>
+                <i class="ni education_hat mr-2"></i>Universidad de Harvard
+              </div>
+              <hr class="my-4">
+              <a href="#">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENERDOR IZQUIERDO, INFORMACIÓN DEL USUARIO -->
+      <div class="col-xl-8 order-xl-1">
+        <div class="card bg-secondary shadow">
+          <div class="card-header bg-white border-0">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <h3 class="mb-0">Cuenta de Hugo</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <form>
+              <h6 class="heading-small text-muted mb-4">Información de Usuario</h6>
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-username">Nombre de usuario</label>
+                      <input type="text" id="input-username" class="form-control form-control-alternative"
+                        placeholder="Username" value="Hlopez" disabled>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-email">Correo Electrónico</label>
+                      <input type="email" id="input-email" class="form-control form-control-alternative"
+                        placeholder="hlopez@gmail.com" value="hlopez@gmail.com" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-first-name">Nombre</label>
+                      <input type="text" id="input-first-name" class="form-control form-control-alternative"
+                        placeholder="First name" value="Hugo Leonel" disabled>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-last-name">Apellido</label>
+                      <input type="text" id="input-last-name" class="form-control form-control-alternative"
+                        placeholder="Last name" value="López Villacorta" disabled>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-username">Sexo</label>
+                      <input type="text" id="input-username" class="form-control form-control-alternative"
+                        placeholder="M/F" value="Masculino" disabled>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-last-name">Teléfono</label>
+                      <input type="text" id="input-last-name" class="form-control form-control-alternative"
+                        placeholder="1222-4287" value="2342-6531" disabled>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <hr class="my-4">
+              <!-- DIRRECIONES -->
+              <h6 class="heading-small text-muted mb-4">Información del contacto</h6>
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-address">Dirección</label>
+                      <input id="input-address" class="form-control form-control-alternative"
+                        placeholder="Dirección de casa" value="Zona 12, reformita" type="text" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-city">Ciudad</label>
+                      <input type="text" id="input-city" class="form-control form-control-alternative"
+                        placeholder="Ciudad" value="Ciudad de Guatemala" disabled>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group focused">
+                      <label class="form-control-label" for="input-country">País</label>
+                      <input type="text" id="input-country" class="form-control form-control-alternative"
+                        placeholder="Country" value="Guatemala" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <hr class="my-4">
+          <!-- Descripcion DE CUADRO DERECHO-->
+          <h6 class="heading-small text-muted mb-4" style="padding: 0px 20px;">Acerca de Hugo</h6>
+          <div class="pl-lg-4">
+            <div class="form-group focused" style="padding: 0px 20px;">
+              <label>Acerca de Hugo</label>
+              <textarea rows="4" style="padding: 0px 20px;" class="form-control form-control-alternative"
+                placeholder="Unas palabras sobre ti..."
+                disabled>Matemático, filósofo, científico y criptógrafo. </textarea>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div><br><br><br>
+</body>
+
+</html>

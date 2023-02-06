@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/todolist.css">
+  <link rel="stylesheet" href="css/perfil.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3176/3176366.png">
+  <title>Todo list</title>
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+  <!-- NAVBAR -->
+  <header>
+    <a href="index.html" class="Name">
+      <h2 class="logo">Todo list</h2>
+    </a>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar"> &#8801 </label>
+
+    <nav class="menu">
+
+      <a href="favoritos.html">Favoritos</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="todolist.html">Todo List</a>
+      <a href="index.html">Cerrar Sesion</a>
+      <label for="check" class="ocultar"> &#967</label>
+    </nav>
+  </header>
+  <!-- TODO LIST -->
+  <main role="main" class="main-wrap hidden">
+    <!-- CUADRO QUE APARECE ENCIMA -->
+    <div role="heading" class="header">
+      <h3 class="app-header" id="añade"> Añade una tarea </h3>
+    </div>
+    <section class="main-content">
+      <section class="todo-form">
+        <form role="form" id="todoForm">
+          <div class="row">
+            <label for="title" id=""> Titulo </label>
+            <input class="form-input" id="title" type="text" />
+          </div>
+
+
+          <div class="row">
+            <label for="description"> Descripción </label>
+            <textarea id="description" rows="4" cols="30"></textarea>
+          </div>
+
+          <div class="row">
+            <label for="priority"> Prioridad </label>
+            <select id="priority">
+              <option value="high">High</option>
+              <option value="med">Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </div>
+
+          <div class="row submit-btn">
+            <input type="submit" class="añadir_boton" value="Añadir" />
+          </div>
+        </form>
+
+      </section>
+
+
+    </section>
+  </main>
+  <!-- CONTENEDORES DE LADO IZQUIERDO  -->
+  <section class="todo-list-container">
+    <div class="todo-in-progress">
+      <h2> Tareas de trabajos</h2>
+      <ul ondragstart="" class="todo-list" id="target">
+        <li draggable="true" class="todo-item high">
+          <div class="card">
+            <h3 class="todo-title">
+              <span class="action">
+                <i class="material-icons md-36 icon-delete">delete</i>
+                <i class="icon-checkbox-outline material-icons md-36 md-dark">check_box_outline_blank</i>
+                <i class="icon-checkbox material-icons md-36 md-light">check_box</i>
+              </span>
+              <span class="title">Agenda </span>
+            </h3>
+            <p class="todo-description">
+              Tomando la idea básica de una agenda telefónica, desarrollar una agenda web similar.</p>
+            <span class="todo-priority"> Alta </span>
+          </div>
+        </li>
+
+        <li draggable="true" class="todo-item high">
+          <div class="card">
+            <h3 class="todo-title"> <span class="action">
+                <i class="material-icons md-36 icon-delete">delete</i>
+                <i class="icon-checkbox-outline material-icons md-36 md-dark">check_box_outline_blank</i>
+                <i class="icon-checkbox material-icons md-36 md-light">check_box</i>
+              </span>
+              <span class="title"> Creación de una página web
+              </span>
+            </h3>
+
+            <p class="todo-description">
+              Cree una serie de páginas HTML con su
+              respectivo CSS, deben ser tres vistas (3
+              documentos html). </p>
+            <span class="todo-priority"> Alta </span>
+
+          </div>
+
+        </li>
+        <li draggable="true" class="todo-item high">
+          <div class="card">
+
+            <h3 class="todo-title"> <span class="action">
+                <i class="material-icons md-36 icon-delete">delete</i>
+                <i class="icon-checkbox-outline material-icons md-36 md-dark">check_box_outline_blank</i>
+                <i class="icon-checkbox material-icons md-36 md-light">check_box</i>
+              </span>
+              <span class="title">Infografía </span>
+            </h3>
+
+            <p class="todo-description">
+              Desarrollo web y preprocesadores. </p>
+            <span class="todo-priority"> Alta </span>
+
+          </div>
+
+        </li>
+
+        <li class="todo-item new">
+          <div class="card">
+
+            <h3 class="todo-title"> <span class="action">
+                <i class="complete material-icons md-36 md-light">add_circle_outline</i>
+              </span>
+              <span class="title">Añadir tarea</span>
+            </h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- CONTENEDOR DE TAREAS HECHAS -->
+    <div class="todo-completed">
+      <ul class="todo-list-completed">
+        <h2> Tareas completadas</h2>
+        <li class="todo-item high">
+          <div class="icon-check">
+            <i class="pad-15 material-icons md-36 md-light">check_circle</i>
+          </div>
+
+          <div class="icon-delete">
+            <i class="pad-15 material-icons md-36 md-light">delete</i>
+          </div>
+          <div class="content">
+            Tarea de Taller
+          </div>
+        </li>
+        <li class="todo-item medium">
+          <div class="icon-check">
+            <i class="pad-15 material-icons md-36 md-light">check_circle</i>
+          </div>
+          <div class="icon-delete">
+            <i class="pad-15 material-icons md-36 md-light">delete</i>
+          </div>
+          <div class="content">
+            Tarea de Tecnología
+          </div>
+        </li>
+        <li class="todo-item low">
+          <div class="icon-check">
+            <i class="pad-15 material-icons md-36 md-light">check_circle</i>
+          </div>
+
+          <div class="icon-delete">
+            <i class="pad-15 material-icons md-36 md-light">delete</i>
+          </div>
+          <div class="content">
+            Tare de Prática Supervisada
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+
+<!-- JAVASCRIPT -->
+<script>//Data
+
+
+  // Necesitamos acceder al elemento de formulario
+  var form = document.getElementById("todoForm");
+
+  // para hacerse cargo de su evento de envío.
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    submitTodo(event);
+  });
+
+  var todoItemTemplate = "<li draggable='true' class='todo-item {{priorityClass}}'><div class='card'><h3 class='todo-title '> <span class='action'><i class='icon-delete material-icons md-36 '>delete</i><i class='icon-checkbox-outline material-icons md-36 md-dark'>check_box_outline_blank</i><i class='icon-checkbox material-icons md-36 md-light'>check_box</i></span> <span class='title'>{{title}}</span> </h3> <p class='todo-description'> {{description}} </p> <span class='todo-priority {{priorityClass}}'> {{priority}} </span> </div></li>";
+
+  function addEventListenerByClass(className, event, fn) {
+    var list = document.getElementsByClassName(className);
+    for (var i = 0, len = list.length; i < len; i++) {
+      list[i].addEventListener(event, fn, false);
+    }
+  }
+
+  addEventListenerByClass('todo-list', 'click', handleClick);
+
+  function handleClick(e) {
+    var targetItem = e.target;
+    var listItem = getClosest(e.target, 'li');
+    console.log(e.target.className);
+
+    if (listItem.className.includes('new')) {
+      handleAdd(listItem);
+      e.stopPropagation();
+    }
+
+    if (e.target.className.includes('complete')) {
+      handleComplete(listItem);
+      e.stopPropagation();
+    }
+    if (e.target.className.includes('close')) {
+      handleDelete(listItem);
+      e.stopPropagation();
+    }
+    else {
+
+      //manejar Editar(listItem);
+    }
+
+  }
+
+  function handleAdd() {
+    var mainWrap = document.querySelector('.main-wrap');
+    mainWrap.classList.toggle('hidden');
+  }
+
+  function handleComplete(listItem) {
+    var target = document.querySelector('.todo-list-completed');
+    var className = listItem.className;
+    var newListEl = document.createElement('li');
+    newListEl.innerText = listItem.querySelector('.todo-title .title').innerText;
+    newListEl.setAttribute('class', className);
+
+    target.appendChild(newListEl);
+
+    listItem.parentNode.removeChild(listItem);
+  }
+
+  function handleDelete(listItem) {
+    fadeOut(listItem);
+
+  }
+
+  function handleEdit(listItem) {
+    var todoItemToEdit = {};
+    todoItemToEdit.title = listItem.querySelector('.todo-title').innerText;
+    todoItemToEdit.description = listItem.querySelector('.todo-description').innerText;
+    todoItemToEdit.priority = listItem.querySelector('.todo-priority').innerText;
+
+    fillForm(todoItemToEdit);
+  }
+
+  function fillForm(todoItem) {
+    form.reset();
+
+    var titleEl = form.querySelector('#title');
+    var descriptionEl = form.querySelector('#description');
+    var priorityEl = form.querySelector('#priority');
+
+    titleEl.value = todoItem.title;
+    descriptionEl.value = todoItem.description;
+
+  }
+
+  function submitTodo(e) {
+
+    var titleEl = form.querySelector('#title');
+    var descriptionEl = form.querySelector('#description');
+    var priorityEl = form.querySelector('#priority');
+
+    var todoItem = {};
+
+    if (titleEl) {
+      todoItem.title = titleEl.value;
+    }
+
+    if (descriptionEl) {
+      todoItem.description = descriptionEl.value;
+    }
+
+    if (priorityEl) {
+      todoItem.priority = priorityEl.options[priorityEl.selectedIndex].text;
+    }
+
+    console.log(todoItem);
+    addTodo(todoItem);
+
+    var mainWrap = document.querySelector('.main-wrap');
+    mainWrap.classList.toggle('hidden');
+
+  }
+
+  function createElement(todoItem) {
+    var elementInnerHTML = todoItemTemplate.replace("{{title}}", todoItem.title).replace("{{description}}", todoItem.description).replace("{{priorityClass}}", todoItem.priority.toLowerCase()).replace("{{priorityClass}}", todoItem.priority.toLowerCase()).replace("{{priority}}", todoItem.priority);
+
+    console.log(elementInnerHTML);
+    return elementInnerHTML;
+  };
+
+  function addTodo(todoItem) {
+    var target = document.getElementById('target');
+    target.innerHTML += createElement(todoItem);
+  }
+
+  function getClosest(el, tag) {
+    // esto es necesario ya que nodeName siempre está en mayúsculas
+    tag = tag.toUpperCase();
+    do {
+      if (el.nodeName === tag) {
+
+        // Se encuentra el nombre de la etiqueta vamos a devolverlo. :)
+        return el;
+      }
+    } while (el = el.parentNode);
+
+    // no encontrado :(
+    return null;
+  }
+
+  function sortCards() {
+    var list = document.getElementById('mylist');
+    var items = list.childNodes;
+    var itemsArr = [];
+    for (var i in items) {
+      if (items[i].nodeType == 1) { // deshacerse de los nodos de texto de espacios en blanco
+        itemsArr.push(items[i]);
+      }
+    }
+
+    itemsArr.sort(function (a, b) {
+      return a.innerHTML == b.innerHTML ? 0 : (a.innerHTML > b.innerHTML ? 1 : -1);
+    });
+
+    for (i = 0; i < itemsArr.length; ++i) {
+      list.appendChild(itemsArr[i]);
+    }
+  }
+
+
+  // desvanecerse
+
+  function fadeOut(el) {
+    el.style.opacity = 1;
+
+    (function fade() {
+      if ((el.style.opacity -= .03) < 0) {
+        el.parentNode.removeChild(el);
+      } else {
+        requestAnimationFrame(fade);
+      }
+    })();
+  }
+
+
+  // fundirse
+
+  function fadeIn(el, display) {
+    el.style.opacity = 0;
+    el.style.display = display || "block";
+
+    (function fade() {
+      var val = parseFloat(el.style.opacity);
+      if (!((val += .1) > 1)) {
+        el.style.opacity = val;
+        requestAnimationFrame(fade);
+      }
+    })();
+  }
+
+  var dragSrcEl = null;
+
+  function handleDragStart(e) {
+
+    // El elemento de destino (este) es el nodo de origen.
+
+    this.classList.add('opaque');
+    dragSrcEl = this;
+
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/html', this.innerHTML);
+  }
+
+  var cols = document.querySelectorAll('.todo-item');
+  [].forEach.call(cols, function (col) {
+    col.addEventListener('dragstart', handleDragStart, false);
+    col.addEventListener('dragenter', handleDragEnter, false)
+    col.addEventListener('dragover', handleDragOver, false);
+    col.addEventListener('dragleave', handleDragLeave, false);
+    col.addEventListener('drop', handleDrop, false);
+    col.addEventListener('dragend', handleDragEnd, false);
+  });
+
+  function handleDragOver(e) {
+    if (e.preventDefault) {
+      e.preventDefault();
+      // Necesario. Nos permite soltar.
+    }
+
+    e.dataTransfer.dropEffect = 'move'; // Ver la sección sobre el objeto DataTransfer.
+
+    return false;
+  }
+
+  function handleDragEnter(e) {
+
+    // este / e.target es el objetivo de desplazamiento actual.
+    this.classList.add('over');
+  }
+
+  function handleDragLeave(e) {
+    this.classList.remove('over'); // este / e.target es el elemento de destino anterior.
+  }
+
+  function handleDrop(e) {
+    // this/e.target es el elemento de destino actual.
+
+    if (e.stopPropagation) {
+      e.stopPropagation();
+      // Evita que algunos navegadores redirijan.
+    }
+
+    // No haga nada si suelta la misma columna que estamos arrastrando.
+    if (dragSrcEl != this) {
+
+      // Establecer el HTML de la columna de origen en el HTML de la columna que soltamos.
+      dragSrcEl.innerHTML = this.innerHTML;
+      this.innerHTML = e.dataTransfer.getData('text/html');
+    }
+
+    this.style.opacity = '1';
+    return false;
+  }
+
+  function handleDragEnd(e) {
+
+    // this/e.target es el nodo fuente.
+
+    [].forEach.call(cols, function (col) {
+      col.classList.remove('over');
+      col.classList.remove('opaque');
+    });
+  }</script>
+
+</html>
